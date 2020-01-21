@@ -7,7 +7,9 @@ import { ListArticlesComponent } from './pages/article/list-articles/list-articl
 const routes: Routes = [
   { path: '', pathMatch: 'full', redirectTo: 'signin' },
   { path: 'signin', component: SignupComponent },
+  // Eager Import
   { path: 'articles', component: ListArticlesComponent },
+  // Lazy Import - il n'y a pas d'import dans le haut du ficher et pas import dans le app module
   { path: 'video', loadChildren: () => import('./pages/video/video.module').then(m => m.VideoModule) }
 ];
 

@@ -6,3 +6,5 @@ Création du multi module vidéo
   4. Ajouter cette route dans les routes du app.module (app.routing.module.ts) --module "app.module.ts"
 
 La création d'un lazy loadé permet à charger la composant Vidéo que lorsque l'utilisateur essaye d'accéder à la route Vidéo
+
+Pour un module lazy loadé, on a pas besoin d'importer vidéo.module dans le app.module
